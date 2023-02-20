@@ -7,9 +7,13 @@ public class EnemyScript : MonoBehaviour
 {
     protected Rigidbody m_body;
 
-    private void Start()
+    protected void Init()
     {
         m_body = GetComponent<Rigidbody>();
+    }
+    private void Start()
+    {
+        Init();
     }
 
     protected Vector3 VectorToPlayer()
